@@ -416,4 +416,20 @@ icon-example {
 .panel.warning .footer {
   background-color: #fa6800; }
 
+datatables {
+  /* :not(option)*/ }
+  datatables .dataTables_length label {
+    min-width: 450px; }
+  datatables .dataTables_length select {
+    max-width: 80px;
+    min-width: 50px; }
+  datatables .dataTables_filter {
+    min-width: 450px; }
+  datatables .dataTables_filter * {
+    display: inline-block; }
+  datatables .dataTables_filter label {
+    width: 100%; }
+  datatables .dataTables_filter input {
+    width: 60%; }
+
 /*# sourceMappingURL=main.css.map */
