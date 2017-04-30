@@ -400,8 +400,7 @@ icon-example{
     position: relative;
     background-color: #ffffff;
     margin-bottom: 60px;
-    .heading,
-    .content {
+    .heading {
         display: block;
         position: relative;
         color: #1d1d1d;
@@ -419,6 +418,7 @@ icon-example{
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        z-index: 0;
         .title {
             margin-left: .625rem;
         }
@@ -464,10 +464,11 @@ icon-example{
         }
     }
     .content {
-        background-color: #e8f1f4;
+        background-color: #ffffff;
         z-index: 1;
         font-size: 0.875rem;
         padding: .625rem;
+        display: block;
     }
     .footer{
         padding: .625rem 0 ;   
@@ -478,5 +479,52 @@ icon-example{
     }
     .info {
         margin-left: .625rem;
+    }
+}
+
+.panel.secondary{
+    .heading {
+        background-color: #767676;
+    }
+    .fa {
+        background-color: #5e5e5e;
+    }
+    .footer{
+        background-color: #767676;   
+    }
+}
+
+.panel.success{
+    .heading {
+        background-color: #60a917;
+    }
+    .fa {
+        background-color: #387100;
+    }
+    .footer{
+        background-color: #60a917;   
+    }
+}
+.panel.alert{
+    .heading {
+        background-color: #ce352c;
+    }
+    .fa {
+        background-color: #c90b00;
+    }
+    .footer{
+        background-color: #ce352c;   
+    }
+}
+
+.panel.warning{
+    .heading {
+        background-color: #fa6800;
+    }
+    .fa {
+        background-color: #b94d00;
+    }
+    .footer{
+        background-color: #fa6800;   
     }
 }
