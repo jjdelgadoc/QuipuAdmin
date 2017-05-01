@@ -1,16 +1,151 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
-</html>
+<h3>Default</h3>
+<hr>
+<form>
+    <div class="medium-6 columns">
+        <label>Input Label
+            <input type="text" placeholder=".medium-6.columns">
+        </label>
+    </div>
+    <div class="medium-6 columns">
+        <label>Input Label
+            <input type="text" placeholder=".medium-6.columns">
+        </label>
+    </div>
+</form>
+<h3>Form inline</h3>
+<hr>
+<form class="inline">
+    <div class="form-row">
+        <div class="form-column">
+            <label>Input Label first</label>
+        </div>
+        <div class="form-column">
+            <input type="text" class="in" placeholder="Input Label first">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-column">
+            <label>Input Label second</label>
+        </div>
+        <div class="form-column">
+            <input type="text" class="in" placeholder="Input Label second">
+        </div>
+    </div>
+</form>
+<h3>Number Inputs</h3>
+<hr>
+<form>
+    <label>
+        How many puppies?
+        <input type="number" value="100">
+    </label>
+</form>
+<h3>Text Areas</h3>
+<hr>
+<form>
+    <label>
+        What books did you read over summer break?
+        <textarea placeholder="None"></textarea>
+    </label>
+</form>
+<h3>Select Menus</h3>
+<hr>
+<form>
+    <label>Select Menu
+        <select>
+            <option value="husker">Husker</option>
+            <option value="starbuck">Starbuck</option>
+            <option value="hotdog">Hot Dog</option>
+            <option value="apollo">Apollo</option>
+        </select>
+    </label>
+    <label>Multiple Select Menu
+        <select multiple>
+            <option value="showboat">Showboat</option>
+            <option value="redwing">Redwing</option>
+            <option value="narcho">Narcho</option>
+            <option value="hardball">Hardball</option>
+        </select>
+    </label>
+</form>
+<h3>Checkboxes and Radio Buttons</h3>
+<hr>
+<form>
+    <div class="row">
+        <fieldset class="large-6 columns">
+            <legend>Choose Your Favorite</legend>
+            <input type="radio" name="pokemon" value="Red" id="pokemonRed" required><label for="pokemonRed">Red</label>
+            <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+            <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+        </fieldset>
+        <fieldset class="large-6 columns">
+            <legend>Check these out</legend>
+            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+            <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+        </fieldset>
+    </div>
+</form>
+<h3>Fieldset Styles</h3>
+<hr>
+<form>
+    <fieldset class="fieldset">
+        <legend>Check these out</legend>
+        <input id="checkbox12" type="checkbox"><label for="checkbox12">Checkbox 1</label>
+        <input id="checkbox22" type="checkbox"><label for="checkbox22">Checkbox 2</label>
+        <input id="checkbox32" type="checkbox"><label for="checkbox32">Checkbox 3</label>
+    </fieldset>
+</form>
+<h3>Help Text</h3>
+<hr>
+<form>
+    <label>Password
+        <input type="password" aria-describedby="passwordHelpText">
+    </label>
+    <p class="help-text" id="passwordHelpText">Your password must have at least 10 characters, a number, and an Emoji.</p>
+</form>
+<h3>Fieldset Styles</h3>
+<hr>
+<form>
+    <fieldset class="fieldset">
+        <legend>Check these out</legend>
+        <input id="checkbox12" type="checkbox"><label for="checkbox12">Checkbox 1</label>
+        <input id="checkbox22" type="checkbox"><label for="checkbox22">Checkbox 2</label>
+        <input id="checkbox32" type="checkbox"><label for="checkbox32">Checkbox 3</label>
+    </fieldset>
+</form>
+<h3>Label Positioning</h3>
+<hr>
+<form>
+    <div class="row">
+        <div class="small-3 columns">
+            <label for="right-label" class="text-right">Label</label>
+        </div>
+        <div class="small-9 columns">
+            <input type="text" id="right-label" placeholder="Right-aligned text input">
+        </div>
+        <div class="small-3 columns">
+            <label for="middle-label" class="text-right middle">Label</label>
+        </div>
+        <div class="small-9 columns">
+            <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+        </div>
+    </div>
+</form>
+<h3>Inline Labels and Buttons</h3>
+<hr>
+<form>
+    <div class="input-group">
+        <span class="input-group-label">$</span>
+        <input class="input-group-field" type="number">
+        <div class="input-group-button">
+            <input type="submit" class="button" value="Submit">
+        </div>
+    </div>
+</form>
+<h3>File Upload Button</h3>
+<hr>
+<form>
+    <label for="exampleFileUpload" class="button">Upload File</label>
+    <input type="file" id="exampleFileUpload" class="show-for-sr">
+</form>

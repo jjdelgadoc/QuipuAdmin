@@ -139,10 +139,7 @@ left-bar {
     color: #fff; }
   left-bar .menu.nested {
     padding-left: 1rem;
-    margin-left: 0;
-    background-color: #ffffff1a; }
-  left-bar .menu.nested li a {
-    border-bottom: 1px solid #fefefe; }
+    margin-left: 0; }
   left-bar .menu.nested li:last-child a {
     border-bottom: 0px solid #fefefe; }
   left-bar .close-button, left-bar .close-button {
@@ -431,5 +428,21 @@ datatables {
     width: 100%; }
   datatables .dataTables_filter input {
     width: 60%; }
+
+form.inline {
+  display: table; }
+  form.inline .form-row {
+    display: table-row;
+    width: 100%;
+    max-width: 100%; }
+    form.inline .form-row .form-column {
+      display: table-cell;
+      vertical-align: middle; }
+      form.inline .form-row .form-column .in {
+        margin-left: 8px; }
+      form.inline .form-row .form-column label {
+        margin-bottom: 1rem; }
+      form.inline .form-row .form-column [type="color"], form.inline .form-row .form-column [type="date"], form.inline .form-row .form-column [type="datetime-local"], form.inline .form-row .form-column [type="datetime"], form.inline .form-row .form-column [type="email"], form.inline .form-row .form-column [type="month"], form.inline .form-row .form-column [type="number"], form.inline .form-row .form-column [type="password"], form.inline .form-row .form-column [type="search"], form.inline .form-row .form-column [type="tel"], form.inline .form-row .form-column [type="text"], form.inline .form-row .form-column [type="time"], form.inline .form-row .form-column [type="url"], form.inline .form-row .form-column [type="week"], form.inline .form-row .form-column textarea {
+        margin-bottom: 1rem; }
 
 /*# sourceMappingURL=main.css.map */

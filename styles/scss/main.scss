@@ -187,10 +187,10 @@ left-bar{
     .menu.nested {
         padding-left: 1rem;
         margin-left: 0;
-        background-color: #ffffff1a;
+        //background-color: #ffffff1a;
     }
     .menu.nested li a{
-        border-bottom: 1px solid #fefefe;
+        //border-bottom: 1px solid #fefefe;
     }
 
     .menu.nested li:last-child a{ 
@@ -553,5 +553,27 @@ datatables{
     }
     .dataTables_filter input{
         width: 60%;
+    }
+}
+
+form.inline{
+    display: table;
+    .form-row{
+        display: table-row;
+        width: 100%;
+        max-width: 100%;
+
+        .form-column{
+            display: table-cell;
+            vertical-align: middle;
+            .in{
+                margin-left: 8px;
+            }
+            label{margin-bottom: 1rem;}
+
+            [type="color"], [type="date"], [type="datetime-local"], [type="datetime"], [type="email"], [type="month"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="time"], [type="url"], [type="week"], textarea{
+                margin-bottom: 1rem;
+            }
+        }
     }
 }
